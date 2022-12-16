@@ -1,0 +1,852 @@
+<div class="mainheader">
+  <div fxLayout="row wrap" fxLayoutAlign="center center">
+
+    <div class="toolbar" fxFlex="100%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayoutAlign="start center"
+      style="padding: 18px;">
+      <div class="logo">
+        <img src="../../assets/Images/logo1.png" alt="">
+      </div>
+      <div fxFlex></div>
+      <div class="toolbarheader" fxshow fxHide.xs fxHide.sm>
+        <button mat-button class="currentcomponent" style="font-size: 20px;" (click)="gotToPage('home')"> Home
+        </button>
+        <button mat-button style="font-size: 20px;" [matMenuTriggerFor]="menu">Ventures <mat-icon style="opacity:0.5;">
+            keyboard_arrow_down</mat-icon></button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Meterstock</button>
+          <button mat-menu-item>Helm Builder</button>
+          <button mat-menu-item>Dr.ETL</button>
+          <button mat-menu-item>Quant Trode</button>
+          <button mat-menu-item>QuickBoot</button>
+        </mat-menu>
+        <button mat-button style="font-size: 20px;" onclick="window.open('//airtable.com/shrf3IOeTmHCPOsLP')"> Career
+        </button>
+        <button mat-button style="font-size: 20px;" (click)="gotToPage('about')"> About</button>
+        <button mat-button style="font-size: 20px;" (click)="gotToPage('contact')"> Contact </button>
+      </div>
+      <div fxHide fxShow.xs fxShow.sm>
+        <button mat-icon-button [matMenuTriggerFor]="mobilemenu" aria-label="Example icon-button with a menu">
+          <mat-icon class="white-icon">more_vert</mat-icon>
+        </button>
+        <mat-menu #mobilemenu="matMenu">
+          <button class="currentcomponent" mat-menu-item (click)="gotToPage('home')">
+            <span>Home</span>
+          </button>
+          <button mat-menu-item [matMenuTriggerFor]="menu">
+            <span>Venture</span>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Meterstock</button>
+            <button mat-menu-item>Helm Builder</button>
+            <button mat-menu-item>Dr.ETL</button>
+            <button mat-menu-item>Quant Trode</button>
+            <button mat-menu-item>QuickBoot</button>
+          </mat-menu>
+          <button mat-menu-item onclick="window.open('//airtable.com/shrf3IOeTmHCPOsLP')">
+            <span>Career</span>
+          </button>
+          <button mat-menu-item (click)="gotToPage('about')">
+            <span>About</span>
+          </button>
+          <button mat-menu-item (click)="gotToPage('contact')">
+            <span>Contact</span>
+          </button>
+        </mat-menu>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="header" fxLayout="column wrap" fxLayoutAlign="center center">
+
+    <div class="ventur" fxLayout="column wrap">
+      <div>
+        <h1 class="venture">The <span style="color: #13CFAC;">Venture</span> Technologists</h1>
+      </div>
+    </div>
+    <div class="you" fxLayoutAlign="center center" fxLayoutAlign.xs="center center" fxLayoutAlign.sm="center center">
+      <p class="venture1" fxFlex.xs="70">
+        You bring <span style="color: #13CFAC;">the idea,</span>
+        we bring <span style="color: #13CFAC;">the
+          technology</span>
+      </p>
+    </div>
+    <div class="togeth" fxLayout.xs="row wrap" fxLayoutAlign.xs="center center">
+      <p class="together" fxFlex.xs="70">
+        Together we <span style="color: #13CFAC;">disrupt
+        </span></p>
+    </div>
+
+    <div class="togetherbtn">
+      <button class="togthbutton" (click)="gotToPage('founder')">
+        Start your Innovation journey
+      </button>
+    </div>
+    <div class="boot" fxLayout="row wrap" style="margin: 0px;">
+      <p class="bootyour">
+        Boot your next venture with time-to-market advantage </p>
+    </div>
+  </div>
+
+  <div class="venturenames" fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutAlign.xs="start"
+    fxLayoutGap.xs="60" fxLayoutGap.sm="15" style="padding: 30px; margin-bottom: 20px;" #venturenames>
+    <div fxFlex fxFlex.xs="0"></div>
+    <div class="meter" fxFlex="18%" fxFlex.xs="20">
+      <img src="../../assets/Images/meterstack.png" alt="">
+    </div>
+    <div class="quickboot" fxFlex="18%" fxFlex.xs="20">
+      <img src="../../assets/Images/quickboot.png" alt="">
+    </div>
+    <div class="quant" fxFlex="18%" fxFlex.xs="20">
+      <img src="../../assets/Images/quanttrade.png" alt="">
+    </div>
+    <div class="dretl" fxFlex="18%" fxFlex.xs="20">
+      <img src="../../assets/Images/dretl.png" alt="">
+    </div>
+    <div class="helm" fxFlex="18%" fxFlex.xs="20">
+      <img src="../../assets/Images/helmbuilder.png" alt="">
+    </div>
+  </div>
+</div>
+<div class="main" style="margin-top: 5%;">
+
+  <section id="two" class="spinnerSection" #spinerSection fxshow fxHide.xs fxHide.sm>
+    <div fxLayout="row">
+      <div class="video-wrap" fxFlex="50">
+        <div class="container" id="a">
+          <div class="outer">
+
+            <div class="inner">
+              <div class="inner-1">
+                <div class="inner-2" #overall>
+                  <div class="mid">
+                    <img src="../../assets/Images/Spinner/Center_WHAT.png" alt="image" class="middle" #middle>
+                  </div>
+                  <div class="image1" #one>
+                    <img src="../../assets/Images/Spinner/AtWhat_what.png" alt="image" #image2 class="two">
+                  </div>
+                  <div class="image2" #two>
+                    <img src="../../assets/Images/Spinner/AtWhat_how.png" alt="image" #image1 class="one">
+                  </div>
+                  <div class="image3" #three>
+                    <img src="../../assets/Images/Spinner/AtWhat_why.png" alt="image" #image3 class="three">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="circle-block" fxFlex="50">
+        <div id="divWhat" style="display: flex; margin: 20px;" fxLayoutAlign="center center" class="spinerwhat1">
+          <div fxLayout="column wrap" class="containerwhat">
+            <div fxLayout="row">
+              <div fxFlex="20" class="whatimages">
+                <img src="../../assets/Images/INNOVATION Icon.png" alt="">
+              </div>
+              <div fxFlex="60">
+                <p class="head">Innovation Delivery</p>
+                <p class="whattext">Create <span style="color: #17C2A4;">tech-centric</span> platforms leveraging our
+                  innovation
+                  delivery know-how and framework approach</p>
+                <div class="add" fxLayout="row">
+                  <div class="pi">
+                    <img src="../../assets/Images/check.png" alt="">
+                  </div>
+                  <div class="whatdetails" style="margin-left: 1rem;">
+                    <p>Delivery methodology tuned for innovation creation</p>
+                  </div>
+                </div>
+                <div class="add" fxLayout="row">
+                  <div class="pi">
+                    <img src="../../assets/Images/check.png" alt="">
+                  </div>
+                  <div class="whatdetails" style="margin-left: 1rem;">
+                    <p>Accelerated delivery with pre-built components</p>
+                  </div>
+                </div>
+                <div class="add" fxLayout="row">
+                  <div class="pi">
+                    <img src="../../assets/Images/check.png" alt="">
+                  </div>
+                  <div class="whatdetails" style="margin-left: 1rem;">
+                    <p>Well-knit tech stack easing architecture built-out</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div fxLayout="row" style="margin: 1rem;">
+              <div fxFlex="20" class="whatimages">
+                <img src="../../assets/Images/Engineering Icon.png" alt="">
+              </div>
+              <div fxFlex="60">
+                <p class="head">Engineering Products</p>
+                <p class="whattext"><span style="color: #17C2A4;">Time to market advantage</span> to innovation
+                  initiatives
+                  with end to end
+                  product ownership thru life-cycle</p>
+                <div class="add" fxLayout="row">
+                  <div class="pi">
+                    <img src="../../assets/Images/check.png" alt="">
+                  </div>
+                  <div class="whatdetails" style="margin-left: 1rem;">
+                    <p>Engineering excellence oriented approach</p>
+                  </div>
+                </div>
+                <div class="add" fxLayout="row">
+                  <div class="pi">
+                    <img src="../../assets/Images/check.png" alt="">
+                  </div>
+                  <div class="whatdetails" style="margin-left: 1rem;">
+                    <p>Enterprise-grade solutions with rich visualizations </p>
+                  </div>
+                </div>
+                <div class="add" fxLayout="row">
+                  <div class="pi">
+                    <img src="../../assets/Images/check.png" alt="">
+                  </div>
+                  <div class="whatdetails" style="margin-left: 1rem;">
+                    <p>Lean process framework for customized solutions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div fxlayout="row">
+              <div fxFlex="20" class="whatimages">
+                <img src="../../assets/Images/enabling intelligence.png" alt="">
+              </div>
+              <div fxFlex="60">
+                <p class="head">Enabling Intelligence</p>
+                <p class="whattext">Leverage pre-built <span style="color: #17C2A4;"> AI/ML ,BI,Big Data Analytics,IOT
+                    toolkits</span>
+                  to make data-driven decision with inisights</p>
+                <div class="add" fxLayout="row">
+                  <div class="pi">
+                    <img src="../../assets/Images/check.png" alt="">
+                  </div>
+                  <div class="whatdetails" style="margin-left: 1rem;">
+                    <p>Pre-fabricated engineering libraries & components</p>
+                  </div>
+                </div>
+                <div class="add" fxLayout="row">
+                  <div class="pi">
+                    <img src="../../assets/Images/check.png" alt="">
+                  </div>
+                  <div class="whatdetails" style="margin-left: 1rem;">
+                    <p>Real-time streaming event driven actioning framework</p>
+                  </div>
+                </div>
+                <div class="add" fxLayout="row">
+                  <div class="pi">
+                    <img src="../../assets/Images/check.png" alt="">
+                  </div>
+                  <div class="whatdetails" style="margin-left: 1rem;" #lastcontent>
+                    <p>Manage large data at scale with integrated toolsets</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- hiding it -->
+            <div fxLayout="row" style="margin: 1rem; visibility: hidden;">
+              <div fxFlex="20" class="whatimages">
+                <img src="../../assets/Images/Engineering Icon.png" alt="">
+              </div>
+              <div fxFlex="60">
+                <p class="head">Engineering Products</p>
+                <p class="whattext"><span style="color: #17C2A4;">Time to market advantage</span> to innovation
+                  initiatives
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="containerhow" id="divHow">
+
+            <div class="timeline">
+              <div class="timeline-container primary">
+                <div class="timeline-icon" fxLayoutAlign="center center">
+                  <i class="far fa-grin-wink"></i>
+                  <img src="../../assets/Images/ideateHow.png" alt="">
+                </div>
+                <div class="timeline-body">
+                  <h4 class="timeline-title"><span class="badge"> 1. IDEATE</span></h4>
+                  <p>Intense deliberations on business model & technology
+                    underpinnings to arrive at business objectives and well-defined
+                    specifications</p>
+                </div>
+              </div>
+              <div class="timeline-container danger">
+                <div class="timeline-icon" fxLayoutAlign="center center">
+                  <i class="far fa-grin-hearts"></i>
+                  <img src="../../assets/Images/build.png" alt="">
+                </div>
+                <div class="timeline-body">
+                  <h4 class="timeline-title"><span class="badge">2. BUILD</span></h4>
+                  <p>Sit tight and witness the power of accelerator components &
+                    frameworks. See the ‘ideas' turning into ‘reality' within matter of weeks</p>
+
+                </div>
+              </div>
+              <div class="timeline-container success">
+                <div class="timeline-icon" fxLayoutAlign="center center">
+                  <i class="far fa-grin-tears"></i>
+                  <img src="../../assets/Images/scale.png" alt="">
+                </div>
+                <div class="timeline-body">
+                  <h4 class="timeline-title"><span class="badge">3. SCALE</span></h4>
+                  <p>Enable sustainable growth with enterprise grade platform and cloud
+                    native deployment achieving reliable & scalable delivery</p>
+
+                </div>
+              </div>
+              <div class="timeline-container warning">
+                <div class="timeline-icon" fxLayoutAlign="center center">
+                  <i class="far fa-grimace"></i>
+                  <img src="../../assets/Images/repeat.png" alt="">
+                </div>
+                <div class="timeline-body">
+                  <h4 class="timeline-title"><span class="badge">4. Repeat</span></h4>
+                  <p lastcontent>Innovations evolves! Upgrade in tune with dynamic market needs
+                    leveraging our framework methodology & continuous delivery tools</p>
+                </div>
+              </div>
+            </div>
+            <!-- hiding it -->
+           <!--  <div fxLayout="row" style="margin: 1rem; visibility: hidden;">
+              <div fxFlex="20" class="whatimages">
+                <img src="../../assets/Images/Engineering Icon.png" alt="">
+              </div>
+              <div fxFlex="60">
+                <p class="head">Engineering Products</p>
+                <p class="whattext"><span style="color: #17C2A4;">Time to market advantage</span> to innovation
+                  initiatives
+                  with end to end
+                  product ownership thru life-cycle</p>
+              </div>
+            </div> -->
+
+          </div>
+        </div>
+        <div fxLayoutAlign="center center">
+          <div fxlayout="column" class="containerwhy" #containerwhy id="divWhy">
+
+            <div fxLayout="row" style="margin: 1rem; visibility: hidden;">
+              <div fxFlex="20" class="whatimages">
+                <img src="../../assets/Images/Engineering Icon.png" alt="">
+              </div>
+              <div fxFlex="60">
+                <p class="head">Engineering Products</p>
+                <p class="whattext"><span style="color: #17C2A4;">Time to market advantage</span> to innovation
+                  initiatives
+                  with end to end
+                  product ownership thru life-cycle</p>
+                <div class="add" fxLayout="row">
+                  <div class="pi">
+                    <img src="../../assets/Images/check.png" alt="">
+                  </div>
+                  <div class="whatdetails" style="margin-left: 1rem;">
+                    <p>Engineering excellence oriented approach</p>
+                  </div>
+                </div>
+                <div class="add" fxLayout="row">
+                  <div class="pi">
+                    <img src="../../assets/Images/check.png" alt="">
+                  </div>
+                  <div class="whatdetails" style="margin-left: 1rem;">
+                    <p>Lean process framework for customized solutions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div fxlayout="row">
+              <div fxFlex="20">
+                <img src="../../assets/Images/team.png" alt="">
+              </div>
+              <div fxFlex="45">
+                <p class="head" style="color:#13CFAC">TEAM</p>
+                <p class="text">Technologists with prowess in constructing carrier
+                  / exchange grade platforms delivering engineering excellence</p>
+              </div>
+            </div>
+            <div fxlayout="row" style="margin: 2rem 0 2rem 0;">
+              <div fxFlex="45">
+                <p class="head">PACE</p>
+                <p class="text">Accelerator component framework
+                  with cloud native & micro-services technology stack enabling end-to-end product implementation</p>
+              </div>
+              <div fxFlex="5"></div>
+              <div fxFlex="30">
+                <img src="../../assets/Images/pace.png" alt="">
+              </div>
+            </div>
+            <div fxlayout="row">
+              <div fxFlex="20">
+                <img src="../../assets/Images/partner.png" alt="">
+              </div>
+              <div fxFlex="45">
+                <p class="head" style="color:#13CFAC">PARTNER</p>
+                <p class="text">Delegate the implementation to spirited
+                  team with high tech competence allowing innovator to focus on achieving business goals</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- What for mobile -->
+  <div fxShow.xs fxShow.sm fxHide style="padding: 20px;">
+    <div fxLayout.xs="row wrap" fxLayoutAlign.xs="center center" fxLayout.sm="column wrap"
+      fxLayoutAlign.sm="center center" class="containerwhatformobile">
+      <div class="hex" fxLayout.xs="row wrap" fxLayoutAlign.xs="center center">
+        <img src="../../assets/Images/WhatHexaGon.png" alt="">
+      </div>
+
+      <div fxLayout.xs="row wrap" fxFlex.xs="100" fxLayoutGap.xs="20" fxLayout.sm="row wrap"
+        fxLayoutAlign.sm="center center" fxFlex.sm="50">
+
+        <div fxFlex="20" fxFlex.sm="20" fxFlex.xs="20" class="whatimage" style="padding-top: 1rem;">
+          <img src="../../assets/Images/INNOVATION Icon.png" alt="">
+        </div>
+        <div fxFlex="60" fxFlex.sm="70" fxFlex.xs="70" style="padding: 20px;">
+          <p class="headingformobile">Innovation Delivery</p>
+          <p class="textdetailsformobile">Create <span style="color: #17C2A4;">tech-centric</span> platforms leveraging
+            our innovation
+            delivery know-how and framework approach</p>
+          <div class="addingformobile" fxLayout="row">
+            <div class="pi">
+              <img src="../../assets/Images/check.png" alt="">
+            </div>
+            <div class="whatingdetailsformobile" style="margin-left: 1rem;">
+              <p>Delivery methodology tuned for innovation creation</p>
+            </div>
+          </div>
+          <div class="addingformobile" fxLayout="row">
+            <div class="piformobile">
+              <img src="../../assets/Images/check.png" alt="">
+            </div>
+            <div class="whatingdetailsformobile" style="margin-left: 1rem;">
+              <p>Accelerated delivery with pre-built components </p>
+            </div>
+          </div>
+          <div class="addingformobile" fxLayout="row">
+            <div class="piformobile">
+              <img src="../../assets/Images/check.png" alt="">
+            </div>
+            <div class="whatingdetailsformobile" style="margin-left: 1rem;">
+              <p>Well-knit tech stack easing architecture built-out</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div fxLayout.xs="row wrap" fxFlex.xs="100" fxLayoutGap.xs="20" fxLayout.sm="row wrap"
+        fxLayoutAlign.sm="center center" fxFlex.sm="50">
+        <div fxFlex="20" fxFlex.sm="20" fxFlex.xs="20" class="whatimage" style="padding-top: 1rem;">
+          <img src="../../assets/Images/Engineering Icon.png" alt="">
+        </div>
+        <div fxFlex="60" fxFlex.sm="70" fxFlex.xs="70" style="padding-left: 25px;">
+          <p class="headingformobile">Engineering Products</p>
+          <p class="textdetailsformobile"><span style="color: #17C2A4;">Time to market advantage</span> to innovation
+            initiatives with end to end
+            product ownership thru life-cycle</p>
+          <div class="addingformobile" fxLayout="row">
+            <div class="pi">
+              <img src="../../assets/Images/check.png" alt="">
+            </div>
+            <div class="whatingdetailsformobile" style="margin-left: 1rem;">
+              <p>Engineering excellence oriented approach</p>
+            </div>
+          </div>
+          <div class="addingformobile" fxLayout="row">
+            <div class="piformobile">
+              <img src="../../assets/Images/check.png" alt="">
+            </div>
+            <div class="whatingdetailsformobile" style="margin-left: 1rem;">
+              <p>Enterprise-grade solutions with rich visualizations </p>
+            </div>
+          </div>
+          <div class="addingformobile" fxLayout="row">
+            <div class="piformobile">
+              <img src="../../assets/Images/check.png" alt="">
+            </div>
+            <div class="whatingdetailsformobile" style="margin-left: 1rem;">
+              <p>Lean process framework for customized solutions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div fxLayout.xs="row wrap" fxFlex.xs="100" fxLayoutGap.xs="20" fxLayout.sm="row wrap"
+        fxLayoutAlign.sm="center center" fxFlex.sm="50">
+        <div fxFlex="20" fxFlex.sm="20" fxFlex.xs="20" class="whatimage">
+          <img src="../../assets/Images/enabling intelligence.png" alt="" style="padding-top: 1rem;">
+        </div>
+        <div fxFlex="60" fxFlex.sm="70" fxFlex.xs="70" style="padding: 20px;">
+          <p class="headingformobile">Enabling Intelligence</p>
+          <p class="textdetailsformobile">Leverage pre-built <span style="color: #17C2A4;"> AI/ML ,BI,Big Data
+              Analytics,IOT toolkits</span>
+            to make data-driven decision with inisights</p>
+          <div class="addingformobile" fxLayout="row">
+            <div class="pi">
+              <img src="../../assets/Images/check.png" alt="">
+            </div>
+            <div class="whatingdetailsformobile" style="margin-left: 1rem;">
+              <p>Pre-fabricated engineering libraries & components</p>
+            </div>
+          </div>
+          <div class="addingformobile" fxLayout="row">
+            <div class="piformobile">
+              <img src="../../assets/Images/check.png" alt="">
+            </div>
+            <div class="whatingdetailsformobile" style="margin-left: 1rem;">
+              <p>Real-time streaming event driven actioning framework</p>
+            </div>
+          </div>
+          <div class="addingformobile" fxLayout="row">
+            <div class="piformobile">
+              <img src="../../assets/Images/check.png" alt="">
+            </div>
+            <div class="whatingdetailsformobile" style="margin-left: 1rem;">
+              <p>Manage large data at scale with integrated toolsets </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- How for mobile -->
+  <div fxShow.xs fxHide fxShow.sm style="padding: 20px;">
+    <div class="hex" fxLayout.xs="row wrap" fxLayout.sm="column wrap" fxLayoutAlign.xs="center center"
+      fxLayoutAlign.sm="center center">
+      <img src="../../assets/Images/HowHexaGon.png" alt="">
+    </div>
+    <div class="containerhow">
+      <div class="timeline">
+        <div class="timeline-container primary">
+          <div class="timeline-icon" fxLayoutAlign="center center">
+            <i class="far fa-grin-wink"></i>
+            <img src="../../assets/Images/ideateHow.png" alt="">
+          </div>
+          <div class="timeline-body">
+            <h4 class="timeline-title"><span class="badge" style="font-size: 16px;">1. IDEATE</span></h4>
+            <p style="font-size: 13px;">Intense deliberations on business model & technology
+              underpinnings to arrive at business objectives and well-defined
+              specifications</p>
+          </div>
+        </div>
+        <div class="timeline-container danger">
+          <div class="timeline-icon" fxLayoutAlign="center center">
+            <i class="far fa-grin-hearts"></i>
+            <img src="../../assets/Images/build.png" alt="">
+          </div>
+          <div class="timeline-body">
+            <h4 class="timeline-title"><span class="badge" style="font-size: 16px;">2. BUILD</span></h4>
+            <p style="font-size: 13px;">Sit tight and witness the power of accelerator components &
+              frameworks. See the ‘ideas' turning into ‘reality' within matter of weeks</p>
+
+          </div>
+        </div>
+        <div class="timeline-container success">
+          <div class="timeline-icon" fxLayoutAlign="center center">
+            <i class="far fa-grin-tears"></i>
+            <img src="../../assets/Images/scale.png" alt="">
+          </div>
+          <div class="timeline-body">
+            <h4 class="timeline-title"><span class="badge" style="font-size: 16px;">3. SCALE</span></h4>
+            <p style="font-size: 13px;">Enable sustainable growth with enterprise grade platform and cloud
+              native deployment achieving reliable & scalable delivery</p>
+
+          </div>
+        </div>
+        <div class="timeline-container warning">
+          <div class="timeline-icon" fxLayoutAlign="center center">
+            <i class="far fa-grimace"></i>
+            <img src="../../assets/Images/repeat.png" alt="">
+          </div>
+          <div class="timeline-body">
+            <h4 class="timeline-title"><span class="badge" style="font-size: 16px;">4. Repeat</span></h4>
+            <p style="font-size: 13px;">Innovations evolves! Upgrade in tune with dynamic market needs
+              leveraging our framework methodology & continuous delivery tools</p>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!-- why for mobile -->
+  <div fxShow.xs fxHide fxShow.sm style="margin: 2rem;">
+    <div fxLayout.xs="row wrap" fxLayoutAlign.xs="center center" class="containerwhyformobile" fxLayout.sm="column wrap"
+      fxLayoutAlign.sm="center center">
+
+      <div class="hex" fxLayout.xs="row wrap" fxLayoutAlign.xs="center center" style="margin-bottom: 4rem;">
+        <img src="../../assets/Images/WhyHexaGon.png" alt="">
+      </div>
+
+      <div fxFlex.xs="95" fxFlex.sm="75" fxLayoutAlign.sm="center center">
+        <div fxLayoutAlign.xs="center center" fxFlex.sm="30" fxLayoutAlign.sm="center center" class="whyimage">
+          <img src="../../assets/Images/team.png" alt="">
+        </div>
+        <div fxFlex.xs="60" fxFlex.sm="50">
+          <p class="headformobile">TEAM</p>
+          <p class="textformobile">Technologists with prowess in constructing carrier
+            / exchange grade platforms delivering engineering excellence</p>
+        </div>
+      </div>
+      <div fxLayout="row" fxFlex.xs="90" fxFlex.sm="75" fxLayoutAlign.sm="center center">
+        <div fxFlex.xs="60" fxFlex.sm="40">
+          <p class="headformobile" style="color: #2A5ECF;">PACE</p>
+          <p class="textformobile">Accelerator component framework
+            with cloud native & micro-services technology stack enabling end-to-end product implementation</p>
+        </div>
+        <div fxFlex="5"></div>
+        <div fxFlex.sm="20" fxLayoutAlign.xs="center center" fxFlex.xs="30" fxLayoutAlign.sm="center center"
+          class="whyimage">
+          <img src="../../assets/Images/pace.png" alt="">
+        </div>
+      </div>
+      <div fxlayout="row" fxFlex.xs="90" fxFlex.sm="75" fxLayoutAlign.sm="center center">
+        <div fxFlex.sm="30" fxLayoutAlign.xs="center center" fxFlex.xs="30" fxLayoutAlign.sm="center center"
+          class="whyimage">
+          <img src="../../assets/Images/partner.png" alt="">
+        </div>
+        <div fxFlex.xs="60" fxFlex.sm="50">
+          <p class="headformobile">PARTNER</p>
+          <p class="textformobile">Delegate the implementation to spirited
+            team with high tech competence allowing innovator to focus on achieving business goals</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <section id="section4cards" #sectioncards class="sectioncards">
+    <div class="maincards" id="techScroll" #technology fxLayout="row" fxLayoutAlign="center center">
+      <div class="technnology">
+        <p class="technologyfocus" fxFlex="100%" fxFlex.xs="100%">
+          TECHNOLOGY FOCUS </p>
+      </div>
+    </div>
+    <!--  for web -->
+    <div #fourcards class="fourcards" style="margin: 2rem;" fxLayout="column" fxLayoutGap="2%" fxshow fxHide.xs>
+
+      <div class="rows" style="margin: 10px;" fxLayout="row wrap" fxLayout.xs="column wrap" fxLayout.sm="column wrap"
+        fxLayoutAlign="center center" fxLayoutGap="2%" fxLayoutGap.xs="2%" fxLayoutGap.sm="2%">
+        <!-- aiml -->
+        <div class="cards1" fxFlex="50" fxLayoutAlign="center center" fxLayoutAlign.sm="center center" fxFlex.xs="100%"
+          fxFlex.sm="100%" fxLayout.xs="column" fxLayout.sm="column">
+
+          <div fxFlex="40" class="imageai" fxLayoutAlign="center center">
+            <div class="animationai" fxLayoutAlign="center center">
+              <div class="images">
+                <ng-lottie [options]="options" (animationCreated)="onAnimate($event)">
+                </ng-lottie>
+
+              </div>
+            </div>
+          </div>
+          <div fxFlex="60" class="text1">
+            <div class="CARD1textheading">
+              <p>AI/ML</p>
+            </div>
+            <div class="card1textdetails">
+              <p style=" color: #FFFFFF;">Build, deploy and
+                scale ML models faster as well as operationally manage at Big Data scale with our unified AI platform
+              </p>
+            </div>
+            <div class="readmore" fxLayoutAlign="start center">
+              <a routerLink="/aiml"> Read More </a><span style=" color: #44EECE; font-size:20px ;  margin-left: 2%;">&rarr;</span>
+            </div>
+          </div>
+        </div>
+        <!--  bigdata -->
+        <div class="cards1" fxFlex="50" fxLayoutAlign.sm="center center" fxLayoutAlign="center center" fxFlex.xs="100%"
+          fxFlex.sm="100%" fxLayout.xs="column" fxLayout.sm="column">
+          <div fxFlex="40" class="imageai">
+            <div class="animationai">
+              <div class="images">
+                <ng-lottie [options]="options1" (animationCreated)="onAnimate($event)">
+                </ng-lottie>
+              </div>
+            </div>
+          </div>
+          <div fxFlex="70" class="text1">
+            <div class="CARD1textheading">
+              <p>Big Data</p>
+            </div>
+            <div class="card1textdetails">
+              <p style=" color: #FFFFFF;">Ingest, process and manage large data sets at Peta byte scale
+                with our cutting-edge platform offering</p>
+            </div>
+            <div class="readmore" fxLayoutAlign="start center">
+              <a routerLink="/bigdata"> Read More </a><span style=" color: #44EECE; font-size:20px ;  margin-left: 2%;">&rarr;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rows" style="margin: 10px;" fxLayout="row wrap" fxLayout.xs="column wrap" fxLayout.sm="column wrap"
+        fxLayoutAlign="center center" fxLayoutGap="2%" fxLayoutGap.xs="2%" fxLayoutGap.sm="2%">
+
+        <div class="cards1" fxFlex="44" fxLayoutAlign="center center" fxLayoutAlign.sm="center center" fxFlex.xs="100%"
+          fxFlex.sm="100%" fxLayout.xs="column" fxLayout.sm="column">
+          <div fxFlex="40" class="imageai" fxLayoutAlign="center center">
+            <div class="animationai">
+              <div class="imagesIot">
+                <ng-lottie [options]="options2" (animationCreated)="onAnimate($event)">
+                </ng-lottie>
+              </div>
+            </div>
+          </div>
+          <div fxFlex="60" class="text1">
+            <div class="CARD1textheading">
+              <p>IoT</p>
+            </div>
+            <div class="card1textdetails">
+              <p style=" color: #FFFFFF;">Experience an end-to-end integrated platform to roll-out
+                IoT based innovation managing entire life cycle</p>
+            </div>
+            <div class="readmore" fxLayoutAlign="start center">
+              <a routerLink="/iot"> Read More </a><span style=" color: #44EECE; font-size:20px ;  margin-left: 2%;"> &rarr;</span>
+            </div>
+          </div>
+        </div>
+        <div class="cards1" fxFlex="44" fxLayoutAlign.sm="center center" fxLayoutAlign="center center" fxFlex.xs="100%"
+          fxFlex.sm="100%" fxLayout.xs="column" fxLayout.sm="column">
+          <div fxFlex="40" class="imageai">
+            <div class="animationai">
+              <div class="images">
+                <ng-lottie [options]="options3" (animationCreated)="onAnimate($event)">
+                </ng-lottie>
+              </div>
+            </div>
+          </div>
+          <div fxFlex="60" class="text1">
+            <div class="CARD1textheading">
+              <p>Cloud</p>
+            </div>
+            <div class="card1textdetails">
+              <p style=" color: #FFFFFF;">Accelerate migration of apps to Cloud platforms leveraging
+                our cloud native & micro-services based tech stack</p>
+            </div>
+            <div class="readmore" fxLayoutAlign="start center">
+              <a routerLink="/cloud"> Read More </a><span style=" color: #44EECE; font-size:20px ;  margin-left: 2%;">&rarr;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- for mobile -->
+  <div class="fourcardsformobile" style="margin: 2rem;" fxLayout="column" fxLayoutGap="2%" fxHide fxShow.xs fxHide.sm>
+
+    <div class="rows" style="margin: 10px;" fxLayout="row wrap" fxLayout.xs="column wrap" fxLayout.sm="column wrap"
+      fxLayoutAlign="center center" fxLayoutGap="2%" fxLayoutGap.xs="2%" fxLayoutGap.sm="2%">
+      <!-- aiml -->
+      <div class="cards">
+
+        <div fxFlex="40" class="imageai" fxLayoutAlign="center center">
+          <div class="animationai" fxLayoutAlign="center center">
+            <div class="images">
+              <ng-lottie [options]="options" (animationCreated)="onAnimate($event)">
+              </ng-lottie>
+
+            </div>
+          </div>
+        </div>
+        <div fxFlex="60" class="text1">
+          <div class="CARD1textheading">
+            <p>AI/ML</p>
+          </div>
+          <div class="card1textdetails">
+            <p style=" color: #FFFFFF;">Build, deploy and
+              scale ML models faster as well as operationally manage at Big Data scale with our unified AI platform</p>
+          </div>
+          <div class="readmore" fxLayoutAlign="start center">
+            <a routerLink="/aiml"> Read More </a><span style=" color: #44EECE; font-size:20px ;  margin-left: 1%;"> &rarr;</span>
+          </div>
+        </div>
+      </div>
+      <!--  bigdata -->
+      <div class="cards">
+        <div fxFlex="40" class="imageai">
+          <div class="animationai">
+            <div class="images">
+              <ng-lottie [options]="options1" (animationCreated)="onAnimate($event)">
+              </ng-lottie>
+            </div>
+          </div>
+        </div>
+        <div fxFlex="70" class="text1">
+          <div class="CARD1textheading">
+            <p>Big Data</p>
+          </div>
+          <div class="card1textdetails">
+            <p style=" color: #FFFFFF;">Ingest, process and manage large data sets at Peta byte scale
+              with our cutting-edge platform offering</p>
+          </div>
+          <div class="readmore" fxLayoutAlign="start center">
+            <a routerLink="/bigdata"> Read More </a>
+            <span style=" color: #44EECE; font-size:20px ;  margin-left: 1%;">&rarr;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rows" style="margin: 10px;" fxLayout="row wrap" fxLayout.xs="column wrap" fxLayout.sm="column wrap"
+      fxLayoutAlign="center center" fxLayoutGap="2%" fxLayoutGap.xs="2%" fxLayoutGap.sm="2%">
+
+      <div class="cards">
+        <div fxFlex="40" class="imageai" fxLayoutAlign="center center">
+          <div class="animationai">
+            <div class="imagesIot">
+              <ng-lottie [options]="options2" (animationCreated)="onAnimate($event)">
+              </ng-lottie>
+            </div>
+          </div>
+        </div>
+        <div fxFlex="60" class="text1">
+          <div class="CARD1textheading">
+            <p>IoT</p>
+          </div>
+          <div class="card1textdetails">
+            <p style=" color: #FFFFFF;">Experience an end-to-end integrated platform to roll-out
+              IoT based innovation managing entire life cycle</p>
+          </div>
+          <div class="readmore" fxLayoutAlign="start center">
+            <a routerLink="/iot"> Read More </a>
+            <span style=" color: #44EECE; font-size:20px ;  margin-left: 1%;"> &rarr;</span>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div fxFlex="40" class="imageai">
+          <div class="animationai">
+            <div class="images">
+              <ng-lottie [options]="options3" (animationCreated)="onAnimate($event)">
+              </ng-lottie>
+            </div>
+          </div>
+        </div>
+        <div fxFlex="60" class="text1">
+          <div class="CARD1textheading">
+            <p>Cloud</p>
+          </div>
+          <div class="card1textdetails">
+            <p style=" color: #FFFFFF;">Accelerate migration of apps to Cloud platforms leveraging
+              our cloud native & micro-services based tech stack</p>
+          </div>
+          <div class="readmore" fxLayoutAlign="start center">
+            <a routerLink="/cloud"> Read More </a>
+            <span style=" color: #44EECE; font-size:20px ;  margin-left: 1%;"> &rarr;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

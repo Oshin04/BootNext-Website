@@ -1,0 +1,247 @@
+<div class="main">
+  <div fxLayout="row wrap" fxLayoutAlign="center center">
+
+    <div class="toolbar" fxFlex="100%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayoutAlign="start center"
+      style="padding: 18px;">
+      <div class="logo">
+        <img src="../../assets/Images/logo2.png" alt="" (click)="gotToPage('home')">
+
+      </div>
+      <div fxFlex></div>
+      <div class="toolbarheader" fxshow fxHide.xs fxHide.sm>
+        <button mat-button style="font-size: 20px;" (click)="gotToPage('home')"> Home </button>
+        <button mat-button style="font-size: 20px;" [matMenuTriggerFor]="menu">Ventures<mat-icon style="opacity: 0.5;">keyboard_arrow_down</mat-icon></button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Meterstock</button>
+          <button mat-menu-item>Helm Builder</button>
+          <button mat-menu-item>Dr.ETL</button>
+          <button mat-menu-item>Quant Trode</button>
+          <button mat-menu-item>QuickBoot</button>
+        </mat-menu>
+        <button mat-button style="font-size: 20px;" class="currentcomponent" onclick="window.open('//airtable.com/shrf3IOeTmHCPOsLP')"> Career </button>
+        <button mat-button style="font-size: 20px;" (click)="gotToPage('about')"> About </button>
+        <button mat-button style="font-size: 20px;" (click)="gotToPage('contact')"> Contact </button>
+      </div>
+      <div fxHide fxShow.xs fxShow.sm>
+        <button mat-icon-button [matMenuTriggerFor]="mobilemenu" aria-label="Example icon-button with a menu">
+          <mat-icon class="white-icon">more_vert</mat-icon>
+        </button>
+        <mat-menu #mobilemenu="matMenu">
+          <button mat-menu-item (click)="gotToPage('home')">
+            <span>Home</span>
+          </button>
+          <button mat-menu-item [matMenuTriggerFor]="menu">
+            <span>Venture</span>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Meterstock</button>
+            <button mat-menu-item>Helm Builder</button>
+            <button mat-menu-item>Dr.ETL</button>
+            <button mat-menu-item>Quant Trode</button>
+            <button mat-menu-item>QuickBoot</button>
+          </mat-menu>
+          <button class="currentcomponent" mat-menu-item onclick="window.open('//airtable.com/shrf3IOeTmHCPOsLP')">
+            <span>Career</span>
+          </button>
+          <button mat-menu-item (click)="gotToPage('about')">
+            <span>About</span>
+          </button>
+          <button mat-menu-item (click)="gotToPage('contact')">
+            <span>Contact</span>
+          </button>
+        </mat-menu>
+      </div>
+    </div>
+
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="center center" class="Careerheading">
+    <div fxFlex="60" class="Careerhead" style="margin: 20px;" fxFlex.xs="100%" fxFlex.sm="80%">
+      <p class="Careerhead1">Hello Folks!
+      </p>
+      <p class="Careerhead2">We are So Excited to Meet you</p>
+    </div>
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="center center" class="Careerr" style="margin: 50px;">
+    <p class="Career">Career
+    </p>
+  </div>
+
+  <div fxLayout="row wrap" fxLayoutAlign="center center" class="Buttons" fxLayoutGap="50px" fxLayoutGap.xs="5px">
+
+    <div class="all">
+      <button class="btn" mat-button (click)="allFunction()">All</button>
+    </div>
+    <div class="Developers">
+      <button class="btn" mat-button (click)="developersFunction()">Developers </button>
+    </div>
+    <div class="Designers">
+      <button class="btn" mat-button (click)="desginersFunction()">Designers </button>
+    </div>
+    <div class="Operation">
+      <button class="btn" mat-button (click)="operationsFunction()">Operations</button>
+    </div>
+
+  </div>
+  <div class="allcards" *ngIf="all" fxLayout="column wrap" fxLayoutAlign="center center" style="margin: 20px;">
+
+    <div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="50px" fxLayoutGap.xs="5px">
+
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap" fxLayout.xs="row wrap">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior ALL</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior ALL</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior ALL</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="card" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="50px" fxLayoutGap.xs="5px">
+
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap" fxLayoutGap="10px">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior desginersr</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap" fxLayoutGap="10px">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior desginers</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior desginersr</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="50px" fxLayoutGap.xs="5px">
+
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior operations</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior operations</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior operations</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <div class="allcards" *ngIf="developers" fxLayout="column wrap" fxLayoutAlign="center center" style="margin: 20px;">
+
+    <div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="50px" fxLayoutGap.xs="5px">
+
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior Andorid Developer</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior Andorid Developer</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior Andorid Developer</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+
+  </div>
+  <div class="allcards" *ngIf="desginers" fxLayout="column wrap" fxLayoutAlign="center center" style="margin: 20px;">
+
+    <div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="50px" fxLayoutGap.xs="5px">
+
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior desginersr</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior desginers</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior desginersr</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
+  <div class="allcards" *ngIf="operations" fxLayout="column wrap" fxLayoutAlign="center center" style="margin: 20px;">
+
+    <div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="50px" fxLayoutGap.xs="5px">
+
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior operations</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior operations</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="cards1" fxLayoutAlign="center center" fxLayout="column wrap">
+        <mat-card-content
+          style="width: 200px; height: 200px; text-align: center; justify-content: center;align-items: center;">
+          <p>Senior operations</p>
+          <p>Exp: 2-4 Years</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
+</div>

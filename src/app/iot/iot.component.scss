@@ -1,0 +1,194 @@
+.toolbar {
+  background-color: white;
+  color: black;
+  height: 100px;
+}
+
+.card {
+  background: rgba(19, 207, 172, 0.15);
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.animationai img {
+  max-width: 100%;
+}
+
+.textheading {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.15em;
+  color: #1E3756;
+}
+
+.text1 {
+  padding: 20px;
+}
+
+.cardtext {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  color: #05473C;
+}
+
+.main {
+  font-family: 'Poppins', sans-serif;
+}
+
+.card2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.035em;
+}
+
+.definedata {
+  h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 72px;
+    color: #1D468A;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 42px;
+    color: #1D468A;
+  }
+}
+
+.defineandbuild {
+  background: #C0F3EA;
+}
+
+.defineehead {
+
+  h1 {
+
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    font-feature-settings: 'liga' off;
+
+    color: #1D468A;
+
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    font-feature-settings: 'liga' off;
+    color: #111827;
+  }
+}
+
+.card1content {
+  background-color: white;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1E3756;
+}
+
+.cardheading {
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 170%;
+  display: flex;
+  align-items: center;
+  color: #1D468A;
+  padding: 10px
+}
+
+.cardcontent {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  font-feature-settings: 'liga' off;
+  color: #1E3756;
+  padding: 10px;
+}
+
+.solutioncard {
+  h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    color: #13CFAC;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 57px;
+    color: #1D468A;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 162%;
+    letter-spacing: 0.035em;
+    color: #000000;
+
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.pannelHead {
+  background-color: #1D468A;
+}
+
+.pannelheading {
+  color: #13CFAC;
+}
+
+.tech img {
+  max-width: 100%;
+}
+
+.expansionlist {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E3756;
+}
+
+mat-expansion-panel-header {
+  background-color: gray;
+}
+
+.cardimage1 img{
+  max-width: 100%;
+}
+.defineparah {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  font-feature-settings: 'liga' off;
+  color: #111827;
+  margin: 10px;
+}
+

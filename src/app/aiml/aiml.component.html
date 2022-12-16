@@ -1,0 +1,280 @@
+<!-- AIMIL -->
+<div   fxLayout="row wrap" fxLayoutAlign="center center">
+
+  <div class="toolbar" fxFlex="100%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayoutAlign="start center"
+    style="padding: 20px;">
+    <div class="logo">
+      <img src="../../assets/Images/logo2.png" alt="" (click)="gotToPage('home')">
+    </div>
+    <div fxFlex></div>
+    <div class="toolbarheader" fxshow fxHide.xs fxHide.sm>
+      <button mat-button style="font-size: 20px;" (click)="gotToPage('home')"> Home </button>
+      <button mat-button style="font-size: 20px;" [matMenuTriggerFor]="menu">Ventures<mat-icon style="opacity: 0.5;">keyboard_arrow_down</mat-icon></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Meterstock</button>
+        <button mat-menu-item>Helm Builder</button>
+        <button mat-menu-item>Dr.ETL</button>
+        <button mat-menu-item>Quant Trode</button>
+        <button mat-menu-item>QuickBoot</button>
+      </mat-menu>
+      <button mat-button style="font-size: 20px;" onclick="window.open('//airtable.com/shrf3IOeTmHCPOsLP')"> Career </button>
+      <button mat-button style="font-size: 20px;" (click)="gotToPage('about')"> About</button>
+      <button mat-button style="font-size: 20px;" (click)="gotToPage('contact')"> Contact </button>
+    </div>
+    <div fxHide fxShow.xs fxShow.sm>
+      <button mat-icon-button [matMenuTriggerFor]="mobilemenu" aria-label="Example icon-button with a menu">
+        <mat-icon class="white-icon">more_vert</mat-icon>
+      </button>
+      <mat-menu #mobilemenu="matMenu">
+        <button mat-menu-item (click)="gotToPage('home')">
+          <span>Home</span>
+        </button>
+        <button mat-menu-item [matMenuTriggerFor]="menu">
+          <span>Venture</span>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Meterstock</button>
+          <button mat-menu-item>Helm Builder</button>
+          <button mat-menu-item>Dr.ETL</button>
+          <button mat-menu-item>Quant Trode</button>
+          <button mat-menu-item>QuickBoot</button>
+        </mat-menu>
+        <button mat-menu-item onclick="window.open('//airtable.com/shrf3IOeTmHCPOsLP')">
+          <span>Career</span>
+        </button>
+        <button mat-menu-item (click)="gotToPage('about')">
+          <span>About</span>
+        </button>
+        <button mat-menu-item (click)="gotToPage('contact')">
+          <span>Contact</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+
+</div>
+
+<div class="main">
+  <div fxLayout="row wrap" fxLayoutAlign="center center">
+    <div class="card" fxFlex="60%" fxFlex.xs="100%" fxFlex.sm="80%" fxLayout="row wrap" fxLayout.xs="column wrap" fxLayout.sm="column wrap">
+      <div fxFlex="30" fxLayoutAlign="center center" class="imageai" fxLayoutAlign.sm="center center">
+        <div class="animationai">
+          <div class="images">
+
+           <!--  <img src="../../assets/Images/AIMAIN.png" alt="" > -->
+           <ng-lottie
+            [options]="options"
+            (animationCreated)="onAnimate($event)">
+          </ng-lottie>
+
+          </div>
+        </div>
+      </div>
+      <div fxFlex="70" class="text1">
+        <div class="textheading">
+          <p>Artificial Intelligence & Machine Learning</p>
+        </div>
+        <div class="subheading">
+          <p>An integrated platform offering for enterprises to scale and
+            future-proof AI-powered transformation</p>
+        </div>
+        <div class="cardtext">
+          <p>Our AI platform helps enterprises adopt a
+            comprehensive approach and roadmap to scaling enterprise-grade
+            AI for their businesses. It converges the power of AI, analytics
+            and cloud to deliver new business solutions and perceptive experiences.
+            The integrated offering can future-proof and efficiently scale AI investments
+            enterprise-wide while managing the risks</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div fxLayout="row wrap" fxLayoutAlign="center center" class="parahone" style="margin: 10px ;">
+    <div fxFlex="50" fxFlex.xs="80" fxFlex.sm="70%"  class="para">
+      <p>AI Studio enables democratization of data to facilitate data-driven business decisions,
+        transformation, and innovation. Using an agile approach, the no-code AI Studio facilitates the development
+        of machine learning models and publishes approved ML models as APIs that can be integrated with business
+        processes. It provides the following capabilities:</p>
+
+    </div>
+  </div>
+  <div class="dataclass" style="margin: 20px;" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="10px" fxLayoutGap.sm="10px">
+
+    <div fxLayout="column wrap" fxFlex="20" fxFlex.xs="45"  fxLayoutAlign="center center" fxLayoutGap="10px"
+      fxLayoutGap.xs="3px">
+      <div class="col1" fxFlex="50" >
+        <div class="colcard">
+          <p>Data pre-processing and visualization: Transform raw data into insights via
+            visualization and correlation kurtosis. Remove any experimental errors
+            and manage missing values.</p>
+        </div>
+      </div>
+      <div class="col1" fxFlex="70">
+        <div class="colcard">
+          <p>ML algorithm training: Create and retain ML models with algorithm suggestions,
+            learning algorithms, algorithm configuration, and model prediction accuracy.</p>
+        </div>
+      </div>
+
+
+
+    </div>
+    <div fxLayout="column wrap" fxFlex="20" fxFlex.xs="45" fxLayoutAlign="center center" fxLayoutGap="20px"
+      fxLayoutGap.xs="3px">
+      <div class="col3" fxFlex="30%">
+        <div class="colcard">
+          <p>Prediction utilities:
+            Validate models using test utilities and integrate APIs for live predictions.</p>
+        </div>
+      </div>
+      <div class="col3" fxFlex="30%">
+        <div class="colcard">
+          <p>Data acquisition: Leverage data from sources such as local files,
+            public data APIs and enterprise data sources.
+          </p>
+        </div>
+      </div>
+      <div class="col3" fxFlex="30%">
+        <div class="colcard">
+          <p>Model management: Maintain versions and manage ML model lifecycles</p>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+  <div fxLayout="column wrap" style="margin: 20px;" fxLayoutAlign="center center" class="augmented">
+    <div fxFlex="50" class="augimage">
+      <img src="../../assets/Images/AI/augmented.png" alt="">
+    </div>
+
+    <div fxFlex="50" class="augpara">
+      <p>Predict outcomes faster using a platform built with data fabric architecture.
+        Collect, organize and analyse data, no matter where it resides</p>
+    </div>
+
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="center center" class="release" style="margin: 10px;">
+    <div fxFlex="55" fxFlex.xs="95%" fxFlex.sm="70%" class="releaseheader">
+      <h3>Release data’s value with AI</h3>
+      <p>A modern, AI-ready data strategy can drive intelligent
+        decision making and reveal what happened and why, so you can look ahead and get viable
+        options for moving forward. That’s the power of intuition & engineering fuelled by the latest
+        AI capabilities</p>
+    </div>
+  </div>
+  <div fxLayout="column wrap" fxLayoutAlign="center center">
+
+    <div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="50px" fxLayoutGap.xs="0px" fxLayoutGap.sm="0px">
+
+      <mat-card fxFlex="30%" fxFlex.xs="90%" fxFlex.sm="70%" class="myCard" fxLayoutAlign="start" fxLayout="column wrap">
+
+        <mat-card-header fxLayout="row wrap" fxLayoutAlign="start" fxLayoutGap="10px" fxLayoutGap.xs="0px">
+          <div class="image">
+            <img src="../../assets/Images/aiforDS.png" alt="">
+          </div>
+          <div class="head">
+            <mat-card-title style="-ms-flex-align: start ; ">
+              AI for Data Scientists: </mat-card-title>
+          </div>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="cardsubhead">
+            Our new unified machine learning platform will help you build, deploy and scale more
+            effective AI models. Our platform provides single development environment for the entire data
+             science workflow
+          </p>
+          <p>Accelerating data preparation</p>
+          <p>Scaling data</p>
+          <p>Training and experimentation</p>
+          <p>Model deployment</p>
+          <p>Rapid prototyping and model development</p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card fxFlex="30%" fxFlex.xs="90%" fxFlex.sm="70%" class="myCard" fxLayoutAlign="start" fxLayout="column wrap"
+
+      >
+        <mat-card-header fxLayout="row wrap" fxLayoutAlign="start" fxLayoutGap="10px" fxLayoutGap.xs="0px"
+          >
+          <div class="image"  style="height: 1rem;">
+            <img src="../../assets/Images/AI/aifordevelopers.png" alt="">
+          </div>
+          <div class="head" fxLayoutAlign="start">
+            <mat-card-title >
+              AI for Developers:  </mat-card-title>
+          </div>
+        </mat-card-header>
+        <mat-card-content style="margin-top:50px ;">
+          <p class="cardsubhead" >
+            Train high-quality custom machine learning
+             models with minimal effort and machine learning expertise. Uncover insights from large scale data-sets
+          </p>
+          <p>Building custom machine learning models in minutes</p>
+          <p>Training models specific to your business needs</p>
+          <p>Indexing and loading a dataset consisting of multiple stored data sources </p>
+          <p>Training your open ML models to classify, extract, and detect sentiment</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="50px" fxLayoutGap.xs="0px" fxLayoutGap.sm="0px">
+      <mat-card fxFlex="30%" fxFlex.xs="90%"  fxFlex.sm="70%" class="myCard" fxLayout="column wrap">
+        <mat-card-header fxLayout="row wrap" fxLayoutAlign="start" fxLayoutGap="10px" fxLayoutGap.xs="0px">
+          <div class="image">
+            <img src="../../assets/Images/AI/aiforoperations.png" alt="">
+          </div>
+          <div class="head">
+            <mat-card-title style="-ms-flex-align: start ;">
+              AI for Operations: </mat-card-title>
+          </div>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="cardsubhead">Your models were accurate yesterday. What about today?
+          </p>
+          <p>Single place to deploy, monitor, manage, and govern all your models in production,
+            regardless of how they were created or when and where they were deployed</p>
+          <p>Automated Model Health Monitoring and Lifecycle Management</p>
+          <p>Deploy and manage the lifecycle of all their production models holistically across the enterprise</p>
+          <p>Continuous AI: Automated strategies to keep your production models at peak performance,
+            regardless of external conditions</p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card fxFlex="30%" fxFlex.xs="90%" fxFlex.sm="70%"  class="myCard" fxLayoutAlign="start" fxLayout="column wrap">
+        <mat-card-header fxLayout="row wrap" fxLayoutAlign="start" fxLayoutGap="10px" fxLayoutGap.xs="0px"
+          style="height: 4rem;">
+          <div class="image">
+            <img src="../../assets/Images/AI/aiforinfra.png" alt="">
+          </div>
+          <div class="head" fxLayoutAlign="center ">
+            <mat-card-title style="-ms-flex-align: start ;">
+              AI for Infrastructure: </mat-card-title>
+          </div>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="cardsubhead">
+            Best-of-breed infrastructure with enterprise-grade security, availability, compliance, and manageability.
+             Our managed services infrastructure offers the power of scale and integrated AI, combined with
+              sustainability and efficiency
+          </p>
+          <p>Preconfigured and optimized containers for deep learning environments</p>
+          <p>Prototyping your AI applications in a portable and consistent environment </p>
+          <p>Accelerating your model training and deployment</p>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <div class="mlstuckture" fxLayout="row wrap" fxLayoutAlign="center center">
+    <div class="mlimage">
+      <img src="../../assets/Images/AI/Diagram 1.png" alt="">
+    </div>
+  </div>
+  <div class="aiml" fxLayout="row wrap" fxLayoutAlign="center center">
+    <div class="aimlimage" fxLayoutAlign="center center">
+      <img src="../../assets/Images/AI/aiml2.png" alt="">
+    </div>
+  </div>
+</div>

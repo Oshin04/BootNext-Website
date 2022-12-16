@@ -1,0 +1,156 @@
+<div fxLayout="row wrap" fxLayoutAlign="center center">
+
+  <div class="toolbar" fxFlex="100%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayoutAlign="start center"
+    style="padding: 20px;">
+    <div class="logo">
+      <img src="../../assets/Images/logo2.png" alt="" (click)="gotToPage('home')">
+    </div>
+    <div fxFlex></div>
+    <div class="toolbarheader" fxshow fxHide.xs>
+      <button mat-button style="font-size: 20px;" (click)="gotToPage('home')"> Home </button>
+      <button mat-button style="font-size: 20px;" [matMenuTriggerFor]="menu">Ventures<mat-icon style="opacity: 0.5;">keyboard_arrow_down</mat-icon></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Meterstock</button>
+        <button mat-menu-item>Helm Builder</button>
+        <button mat-menu-item>Dr.ETL</button>
+        <button mat-menu-item>Quant Trode</button>
+        <button mat-menu-item>QuickBoot</button>
+      </mat-menu>
+      <button mat-button style="font-size: 20px;" onclick="window.open('//airtable.com/shrf3IOeTmHCPOsLP')"> Career </button>
+      <button mat-button style="font-size: 20px;" (click)="gotToPage('about')"> About</button>
+      <button mat-button style="font-size: 20px;" (click)="gotToPage('contact')"> Contact </button>
+    </div>
+    <div fxHide fxShow.xs>
+      <button mat-icon-button [matMenuTriggerFor]="mobilemenu" aria-label="Example icon-button with a menu">
+        <mat-icon class="white-icon">more_vert</mat-icon>
+      </button>
+      <mat-menu #mobilemenu="matMenu">
+        <button mat-menu-item (click)="gotToPage('home')">
+          <span>Home</span>
+        </button>
+        <button mat-menu-item [matMenuTriggerFor]="menu">
+          <span>Venture</span>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Meterstock</button>
+          <button mat-menu-item>Helm Builder</button>
+          <button mat-menu-item>Dr.ETL</button>
+          <button mat-menu-item>Quant Trode</button>
+          <button mat-menu-item>QuickBoot</button>
+        </mat-menu>
+        <button mat-menu-item onclick="window.open('//airtable.com/shrf3IOeTmHCPOsLP')">
+          <span>Career</span>
+        </button>
+        <button mat-menu-item (click)="gotToPage('about')">
+          <span>About</span>
+        </button>
+        <button mat-menu-item (click)="gotToPage('contact')">
+          <span>Contact</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+
+</div>
+<div class="main">
+  <div fxLayout="row wrap" fxLayoutAlign="center center">
+    <div class="card" fxFlex="60%" fxFlex.xs="100%" fxFlex.sm="80%" fxLayout="row wrap" fxLayout.xs="column wrap" fxLayout.sm="column wrap" style="margin: 30px;">
+      <div fxFlex="30" class="imageai" fxLayoutAlign="center center"  fxLayoutAlign.sm="center center">
+        <div class="animationai">
+          <div class="images">
+          <!--   <img src="../../assets/Images/CLOUDMAIN.png" alt=""> -->
+          <ng-lottie
+          [options]="options"
+          (animationCreated)="onAnimate($event)">
+        </ng-lottie>
+
+          </div>
+        </div>
+      </div>
+      <div fxFlex="70" class="text1">
+        <div class="textheading">
+          <p>Cloud Services</p>
+          <p class="subhead"> Streamline migration of mission-critical business applications to the cloud</p>
+        </div>
+        <div class="cardtext">
+
+          <p>
+            Transitioning to the cloud provides businesses new opportunities and operational
+            muscles to unlock innovation across their organization including fundamentally
+            reinventing their business models. With extensive industry and technology expertise,
+            our professionals collaborate to strategically identify, plan and propel business
+            transformation with cloud enabled products & services. Our industry-mature cloud
+            experience, exposure to extensive ecosystem, business outcome focus and appreciation
+            of the organization / operating model implications of cloud migration, enable us
+            to create cloud-led, sustainable solutions designed to uniquely meet our client’s
+            needs
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="center center" class="datacolms" fxLayoutGap="15">
+
+    <div class="col1" fxFlex="30%" fxLayout="column wrap" fxLayout.xs="row wrap" fxFlex.xs="90" fxFlex.sm="90" fxLayoutAlign="start center" style="  margin-bottom: 40px;">
+
+      <div class="colhead" fxFlex="40%" style="margin-bottom: 30px;" >
+        <p>Orchestrate your Cloud journey</p>
+      </div>
+      <p class="colcontent">BootNext supports both public Cloud Platforms as well as
+        on-prem deployments to open up opportunities for the business. Our Cloud services
+        features the computing environment for both structured and unstructured data.
+        We have proficient experience in the field of delivering
+        the enterprise applications starting from architecture to deployment.</p>
+      <p class="colcontent">Our team has an experience in developing new platforms and migrating
+        existing applications on the cloud infrastructure. We leverage the best practices
+        from developing the architecture to deployment. Our services are extended for
+        product and application development services in the cloud computing.</p>
+      <p class="colcontent">We offer Cloud engineering solutions on various models of the
+        cloud, like Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and
+        Software- as-a-Service (SaaS). We possess in-house PaaS solution to rapidly
+        enable production innovation. We provide managed services ensuring that the
+        applications behave well with the cloud platform.</p>
+      <p class="colcontent">.Our Cloud services enables the clients to be a part
+        of the growing technology stack and take advantage of the readily
+        available components to accelerate their business growth, improve
+        productivity, and enhance their service quality.</p>
+    </div>
+    <div class="col1" fxFlex="30%" fxLayout="column wrap" fxLayout.xs="row wrap" fxFlex.xs="90"  fxFlex.sm="90">
+
+      <div class="colhead" fxFlex="40%" style="margin: 25px;">
+        <p>Kubernetes platform tailored for hybrid multi-cloud</p>
+      </div>
+      <p class="colcontent">Our platform provide for enterprise-ready Kubernetes container
+        deployment built for an open hybrid cloud strategy. It is designed to provide a
+        consistent interface experience to manage multi-cloud, on-premise or at the edge
+        deployment. The full-stack automated operations and self-service provisioning for
+        developers lets teams work together more efficiently to move ideas from
+        development to production
+      </p>
+      <p class="colcontent">BootNext provides a distributed system for cloud-native
+        application management, using Kubernetes as its kernel. It provides a
+        plug-and-play architecture, allowing third-party applications to be seamlessly
+        integrated into its ecosystem. A multi-tenant enterprise-grade open-source
+        Kubernetes container platform with full-stack automated IT operation and
+        streamlined DevOps workflows. It provides developer-friendly wizard web UI,
+        helping enterprises to build out a more robust and feature-rich Kubernetes
+        platform, which includes the most common functionalities needed for enterprise
+        Kubernetes strategies
+      </p>
+      <p class="colcontent">Multi-tenancy enables different teams to securely
+        deploy and maintain containerized applications from the cloud to the
+        edge. It allows developers to deploy code with several clicks on the
+        friendly console, and brings integrated observability and powerful
+        DevOps strategies for the Ops team. It also helps the Infra team to
+        install and maintain Kubernetes cluster with efficient, flexible
+        network solutions which avoids locking teams into a single-vendor
+        ecosystem
+      </p>
+    </div>
+  </div>
+  <div class="timeline" fxLayout="row wrap" fxLayoutAlign="center center">
+    <div class="zigtimeline">
+      <img src="../../assets/Images/cloud/cloudtimeline.png" alt="">
+    </div>
+  </div>
+</div>

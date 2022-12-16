@@ -1,0 +1,76 @@
+.main {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.Careerhead1 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34.3307px;
+  line-height: 37px;
+  color: #254F9B;
+
+}
+.toolbar {
+  background-color: white;
+  color: black;
+  height: 100px;
+}
+
+.Careerhead2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48.9416px;
+  line-height: 53px;
+
+  color: #01DE98;
+}
+
+.Career {
+  font-weight: 600;
+  font-size: 37px;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+  color: #1E3756;
+
+}
+
+.Buttons {
+  margin: 20px;
+}
+
+.btn {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  color: #18C0A1;
+
+}
+
+.card {
+  margin: 10px;
+}
+
+.cards1 {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(189.99deg, #043EA7 -1.63%, rgba(19, 206, 172, 0.83) 102.89%, rgba(19, 207, 172, 0.55) 102.9%);
+  border-radius: 14px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin: 10px;
+}

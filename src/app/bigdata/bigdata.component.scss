@@ -1,0 +1,153 @@
+.toolbar {
+  background-color: white;
+  color: black;
+  height: 100px;
+}
+
+.card {
+  background: rgba(19, 207, 172, 0.15);
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.animationai img {
+  max-width: 100%;
+}
+
+.text1 {
+  padding: 20px;
+}
+
+.textheading {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.15em;
+  color: #1E3756;
+}
+
+.subheading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #0A8F78;
+
+}
+
+.cardtext {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  color: #05473C;
+
+}
+
+.main {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.maincard {
+  background: rgba(19, 207, 172, 0.15);
+}
+
+.cardimage {
+  max-width: 100%;
+}
+
+.platformheading {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.035em;
+  color: #13CFAC;
+
+}
+
+.para {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  text-align: justify;
+  letter-spacing: 0.035em;
+  color: #000000;
+
+}
+
+.ulstyle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.035em;
+  color: #0A8F78;
+
+}
+
+.heading {
+  text-align: center;
+}
+
+.zigzagimage img {
+  max-width: 100%;
+}
+@media screen and (max-width: 599px) {
+  .zigzagimage img {
+    max-width: 90%;
+  }
+}
+
+
+
+.timeline {
+  margin: 20px;
+  margin-bottom: 0px;
+}
+
+.timeline img {
+  max-width: 100%;
+}
+
+.datacolheading {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.035em;
+  color: #2A5ECF;
+
+}
+
+.colhead {
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1E3756;
+}
+
+.col1 {
+  padding: 10px;
+}
+
+.colcontent {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: justify;
+  letter-spacing: 0.035em;
+  color: #1E3756;
+}
+
+.diamondimage{
+  margin: 10px;
+}
+
+.diamondimage img {
+  max-width: 100%;
+}

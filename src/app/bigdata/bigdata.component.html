@@ -1,0 +1,172 @@
+<div fxLayout="row wrap" fxLayoutAlign="center center">
+
+  <div class="toolbar" fxFlex="100%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayoutAlign="start center"
+    style="padding: 20px;">
+    <div class="logo">
+      <img src="../../assets/Images/logo2.png" alt="" (click)="gotToPage('home')">
+    </div>
+    <div fxFlex></div>
+    <div class="toolbarheader" fxshow fxHide.xs>
+      <button mat-button style="font-size: 20px;" (click)="gotToPage('home')"> Home </button>
+      <button mat-button style="font-size: 20px;" [matMenuTriggerFor]="menu">Ventures<mat-icon style="opacity: 0.5;">keyboard_arrow_down</mat-icon></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Meterstock</button>
+        <button mat-menu-item>Helm Builder</button>
+        <button mat-menu-item>Dr.ETL</button>
+        <button mat-menu-item>Quant Trode</button>
+        <button mat-menu-item>QuickBoot</button>
+      </mat-menu>
+      <button mat-button style="font-size: 20px;" onclick="window.open('//airtable.com/shrf3IOeTmHCPOsLP')"> Career </button>
+      <button mat-button style="font-size: 20px;" (click)="gotToPage('about')"> About</button>
+      <button mat-button style="font-size: 20px;" (click)="gotToPage('contact')"> Contact </button>
+    </div>
+
+    <div fxHide fxShow.xs>
+      <button mat-icon-button [matMenuTriggerFor]="mobilemenu" aria-label="Example icon-button with a menu">
+        <mat-icon class="white-icon">more_vert</mat-icon>
+      </button>
+      <mat-menu #mobilemenu="matMenu">
+        <button mat-menu-item (click)="gotToPage('home')">
+          <span>Home</span>
+        </button>
+        <button mat-menu-item [matMenuTriggerFor]="menu">
+          <span>Venture</span>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Meterstock</button>
+          <button mat-menu-item>Helm Builder</button>
+          <button mat-menu-item>Dr.ETL</button>
+          <button mat-menu-item>Quant Trode</button>
+          <button mat-menu-item>QuickBoot</button>
+        </mat-menu>
+        <button mat-menu-item onclick="window.open('//airtable.com/shrf3IOeTmHCPOsLP')">
+          <span>Career</span>
+        </button>
+        <button mat-menu-item (click)="gotToPage('about')">
+          <span>About</span>
+        </button>
+        <button mat-menu-item (click)="gotToPage('contact')">
+          <span>Contact</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+
+</div>
+<div class="main">
+  <div fxLayout="row wrap" fxLayoutAlign="center center">
+    <div class="card" fxFlex="60%"fxFlex.xs="100%" fxFlex.sm="80%" fxLayout="row wrap" fxLayout.xs="column wrap" fxLayout.sm="column wrap"
+      style=" margin: 40px;">
+      <div fxFlex="30" class="imageai" fxLayoutAlign="center center" fxLayoutAlign.sm="center center">
+        <div class="animationai">
+          <div class="images">
+            <!-- <img src="../../assets/Images/BIGMAIN.png" alt=""> -->
+            <ng-lottie
+            [options]="options"
+            (animationCreated)="onAnimate($event)">
+          </ng-lottie>
+          </div>
+        </div>
+      </div>
+      <div fxFlex="70" class="text1">
+        <div class="textheading">
+          <p>Big Data</p>
+        </div>
+        <div class="subheading">
+          <p>An integrated platform for all the Big Data needs</p>
+        </div>
+        <div class="cardtext">
+          <p>Our platform combines the features & capabilities need to manage all aspects associated with
+            big data applications in unified manner offering services through integrated console. It is an enterprise
+            class
+            IT platform that enables development, deployment, operation and management of big data infrastructure</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center" class="platformheading">
+    <div fxFlex="60" class="platformheading" fxFlex.xs="80">
+      <p>Platform build by developers for developers
+      </p>
+    </div>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="center center" class="parahone">
+    <div fxFlex="50%" fxFlex.xs="80">
+      <p class="para">The platform integrates all the software utilities designed to ingest, process and analyse the
+        information from all integration sources catering to varied data sources in unified manner. Its developer
+        friendly
+        interfaces allow for developers to work with ease as well as provide for Operations team to manage large
+        workloads.
+        Platform is designed to meet the emerging needs of Data scientists and provides varied interfaces for integrated
+        model development & deployment experience
+
+      </p>
+      <div class="points" fxLayout="row wrap">
+        <div class="point1col">
+          <ul class="ulstyle">
+            <li>Simple to use and secure by design</li>
+            <li>Open and extensible</li>
+          </ul>
+        </div>
+        <div class="point1col">
+          <ul class="ulstyle">
+            <li>For data engineers and data scientists</li>
+            <li>Support on-prem and cloud</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="timeline"  fxLayout="row wrap" fxLayoutAlign="center center" >
+    <div class="zigzagimage">
+      <img src="../../assets/Images/Bigdata/bigdatazigzag.png" alt="">
+    </div>
+  </div>
+  <div class="timeline" fxLayout="row wrap" fxLayoutAlign="center center">
+    <div class="timelineimage">
+      <img src="../../assets/Images/Bigdata/datatimeline.png" alt="">
+    </div>
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="center center" class="datacolmsheading">
+    <div fxFlex="70" class="datacolheading">
+      <p>Bring all your data together with a data lake
+      </p>
+    </div>
+  </div>
+
+  <div fxLayout="row wrap" fxLayoutAlign="center center" class="datacolms">
+
+    <div class="col1" fxFlex="30%" fxLayout="column wrap" fxLayout.x="row wrap" fxFlex.xs="90">
+
+      <div class="colhead" fxFlex="40%" style="margin-bottom: 26px;">
+        <p>Complete & integrated platform</p>
+      </div>
+      <p class="colcontent">Deploy a complete & integrated solution to manage data ingestion, processing,
+        integration and analytics to allow for business users to create amazing business value via insights.
+        Ingest data via batch, streaming, or real- time processes and store it in data lake for algorithmic processing.
+        Catalog and apply governance to the data so it can be used analysis, visualizations, and machine learning models
+      </p>
+
+    </div>
+    <div class="col1" fxFlex="30%" fxLayout="column wrap" fxLayout.x="row wrap" fxFlex.xs="90">
+
+      <div class="colhead" fxFlex="40%" style="padding: 12px;">
+        <p>Easy to manage and operate</p>
+      </div>
+      <p class="colcontent">Increase team productivity with a fully managed, operations
+        enabled production clusters that are managed by GUI as well as accessible via APIs. Platform is designed
+        to be automatically provisioned with high availability configuration in secured manner. Platform employs
+        proprietary ABCDs (Audit, Balance, Control, Data Integrity & SLAs) framework to ease the DevOps working and
+        management of complex workloads in consistent fashion
+      </p>
+
+    </div>
+  </div>
+  <div class="diamond" fxLayout="row wrap" fxLayoutAlign="center center">
+    <div class="diamondimage">
+      <img src="../../assets/Images/Bigdata/diamond.png" alt="">
+    </div>
+  </div>
+
+</div>

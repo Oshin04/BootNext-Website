@@ -1,0 +1,142 @@
+<div fxLayout="row wrap" fxLayoutAlign="center center">
+
+  <div class="toolbar" fxFlex="100%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayoutAlign="start center"
+    style="padding: 20px;">
+    <div class="logo">
+      <img src="../../assets/Images/logo2.png" alt="" (click)="gotToPage('home')">
+    </div>
+    <div fxFlex></div>
+    <div class="toolbarheader" fxshow fxHide.xs fxHide.sm>
+      <button mat-button style="font-size: 20px;" (click)="gotToPage('home')"> Home </button>
+      <button mat-button style="font-size: 20px;" [matMenuTriggerFor]="menu">Ventures<mat-icon style="opacity: 0.5;">
+          keyboard_arrow_down</mat-icon></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Meterstock</button>
+        <button mat-menu-item>Helm Builder</button>
+        <button mat-menu-item>Dr.ETL</button>
+        <button mat-menu-item>Quant Trode</button>
+        <button mat-menu-item>QuickBoot</button>
+      </mat-menu>
+      <button mat-button style="font-size: 20px;" onclick="window.open('//airtable.com/shrf3IOeTmHCPOsLP')"> Career
+      </button>
+      <button mat-button style="font-size: 20px;" class="currentcomponent" (click)="gotToPage('about')">About</button>
+      <button mat-button style="font-size: 20px;" (click)="gotToPage('contact')"> Contact </button>
+    </div>
+    <div fxHide fxShow.xs fxShow.sm>
+      <button mat-icon-button [matMenuTriggerFor]="mobilemenu" aria-label="Example icon-button with a menu">
+        <mat-icon class="white-icon">more_vert</mat-icon>
+      </button>
+      <mat-menu #mobilemenu="matMenu">
+        <button mat-menu-item (click)="gotToPage('home')">
+          <span>Home</span>
+        </button>
+        <button mat-menu-item [matMenuTriggerFor]="menu">
+          <span>Venture</span>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Meterstock</button>
+          <button mat-menu-item>Helm Builder</button>
+          <button mat-menu-item>Dr.ETL</button>
+          <button mat-menu-item>Quant Trode</button>
+          <button mat-menu-item>QuickBoot</button>
+        </mat-menu>
+        <button mat-menu-item onclick="window.open('//airtable.com/shrf3IOeTmHCPOsLP')">
+          <span>Career</span>
+        </button>
+        <button class="currentcomponent" mat-menu-item (click)="gotToPage('about')">
+          <span>About</span>
+        </button>
+        <button mat-menu-item (click)="gotToPage('contact')">
+          <span>Contact</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+
+</div>
+<div class="main">
+
+  <div class="Head">
+
+    <div class="firstSection" fxLayout="row wrap" fxLayout.xs="column wrap" fxLayout.sm="column wrap">
+
+      <div class="contentOne" fxFlex="50">
+        <p class="heading"> About Bootnext </p>
+        <p class="p1">Someone once told us the way to eat a Whale is very simple </p>
+        <p class="p2">Go at it Piece by Piece </p>
+        <p class="p3">Since then our strategy has been simple </p>
+        <p class="p4">Deconstructing Complex Engineering Problems into small repeatable solutions</p>
+        <p class="p5">With this principle in mind <span class="spanWords">BootNext</span> was born.</p>
+      </div>
+      <div class="aboutImage" fxFlex="50" fxLayoutAlign="center">
+        <img src="../../assets/Images/about/aboutfirst.png" alt="">
+      </div>
+
+    </div>
+
+    <div class="secondSection" fxLayout="row wrap" fxLayout.xs="column wrap">
+
+      <!--  <div class="aboutImage" fxFlex="50"   fxLayoutAlign="center">
+        <img src="../../assets/Images/about/about.png" alt="">
+      </div> -->
+
+      <div class="contentOne">
+        <p>We started with powering the BootNext engine with production grade accelerator
+          components to churn out reliable software solutions with time advangate every time.</p>
+        <p>Today we are a tribe of technologists working with a vision to deliver enterprise grade software
+          solutions to enable technologial Innovations for our <span class="spanWords">&#60;startup&#62;</span>
+          partner's success.</p>
+        <p><span class="spanWords">BootNext</span> aims to collabrate with budding entrepreneurs as their Technological
+          partner</p>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="stripe" fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+
+    <div><img src="../../assets/Images/about/about3.png" alt=""></div>
+    <div><img src="../../assets/Images/about/about4.png" alt=""></div>
+    <div><img src="../../assets/Images/about/about5.png" alt=""></div>
+
+  </div>
+
+  <div class="founders" fxLayout="row wrap" fxLayout.xs="column wrap">
+
+
+    <div class="founderDetails">
+      <p class="heading">Founders</p>
+      <p><span class="spanWords" style="font-size:1.25rem">Amber Jain</span> and <span class="spanWords"
+          style="font-size:1.25rem">Rohit Saraf</span> (former employees of Rakuten and an Innoeye founding
+        member) established BootNext. Together, Amber and Rohit made up the founding
+        team of Innoeye, which has grown from a team of four people to a software
+        company with 2000 employees (biggest in central India). They got the chance to
+        gain practical experience working on large-scale projects and industry-disrupting
+        technical solutions throughout their enriching journey of more than ten years.</p>
+    </div>
+
+
+    <div class="founderImages" fxLayoutAlign="center center" fxLayout.xs="column wrap" fxLayoutGap.xs="20"
+      fxLayout.sm="column wrap" fxLayoutGap.sm="20">
+      <div class="rohit" fxLayout="row wrap" fxLayoutAlign="center center">
+        <img src="../../assets/Images/about/founder1.jpg" alt="">
+        <div class="founderDetailswithImage">
+          <p style="font-size: 2em; font-weight: 600;">Rohit Saraf</p>
+          <p style="font-size: 1.5em;">Co-Founder</p>
+          <p style="font-size: 1.3em;">rohit.saraf@bootnext.com</p>
+        </div>
+      </div>
+      <div class="amber" fxLayout="row wrap" fxLayoutAlign="center center">
+        <img src="../../assets/Images/about/founder2.jpg" alt="">
+        <div class="founderDetailswithImage">
+          <p style="font-size: 2em; font-weight: 600;">Amber Jain</p>
+          <p style="font-size: 1.5em;">Co-Founder</p>
+          <p style="font-size: 1.3em;">amber.jain@bootnext.com</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
